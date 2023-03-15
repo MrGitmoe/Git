@@ -1,0 +1,76 @@
+//Create an empty Repo
+git init <directory>
+
+//Clone a repo onto a local machine
+//Can be located on the local file system or remotely using HTTP or SSH
+git clone <repo>
+
+//Defines the author for the commits into a repo
+//Use the --global flag to set config options for the current user
+git config user.name <name> --global
+
+//Stage your changes
+//You can define a specific file or directory to update only the indicated
+git add
+
+//Commit your staged changes
+//Using -m prevents you from needing to enter a message seperately
+git commit -m "<message>"
+
+//Lists files that are staged, unstaged, and untracked
+git status
+
+//Displays commit history
+//Can be customized using additional options
+git log
+
+//Show unstaged changes between your local index and the working directory
+git diff
+
+//Undo a change from a commit
+//You can view the specific commit by viewing the 'log'
+git revert <commit>
+
+//Removes a file from staging without overwriting any changes
+git reset <file>
+
+//This shows which files would be removed from the working directory
+//You can replace the -n with a -f to execute the clean
+git clean -n
+
+//Replace the last commit with staged changes and the changes that have already been committed
+//If nothing is staged it will just change the commit message
+git commit --ammend
+
+//Rebase the current branch onto <base>
+//<base> can be a commitID, branch name, tag, or relative reference to the HEAD
+git rebase <base>
+
+//Shows a log of changes to the local repository's HEAD
+//Add --relative-date to show date info or -- all to show the refs
+git reflog
+
+//List the branches in your repo
+//Add a <branch> argument to create a branch with that name
+git branch
+
+//Create and checkout a new branch
+//Add the -b flag to checkout an existing branch
+git checkout -b <branch>
+
+//Merge the indicated branch into the current branch
+git merge <branch>
+
+//Create a new connection to a remote repository 
+git remote add <name> <url>
+
+//Fetches from a specified branch in the repo
+//Leave off the <branch> to fetch all remote references
+git fetch <remote> <branch>
+
+//Fetches a copy of the specified branch, and immediately merges it into the local
+git pull <remote>
+
+//Pushes the branch to remote with the necessary commits and objects
+//Creates the branch if it did not previously exist
+git push <remote> <branch>
