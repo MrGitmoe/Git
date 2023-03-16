@@ -1,0 +1,35 @@
+//For use within the CLI - refer to the basics page in this repository
+//Jira
+1.)Login
+2.)Go to apps
+3.)Search the marketplace for "Github for Jira" and click on "Get app"
+4.)Click on "Get it now"
+5.)Click "Get Started" once installed
+6.)Click on "Connect GitHub Organization"
+7.)Authorize access
+8.)On the next page "Install Github for Jura on a new organization"
+9.)Give access to all or select repositories
+10.)Connect to necessary repository
+
+
+
+//VS Code
+//Clone repository [UI]
+1.)Open the command palette (Ctrl+Shift+P)
+2.)Search for "gitcl"
+3.)Select "Clone from GitHub" and Enter
+4.)Complete the sign-in process if prompted
+5.)Enter the respective repo URL
+//Accessing CLI
+1.)Install Git
+2.)Open VS Code
+3.)Open the command palette (Ctrl+Shift+P)
+4.)Create a new terminal window
+5.)Switch terminal from powershell to bash
+
+
+
+//Git for Windows
+1.)Install the latest version from online
+2.)Once installed launch the application
+3.)Open bash terminal or navigate using the Interface
